@@ -41,5 +41,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Gak-R5-9Oe">
+            <objects>
+                <viewController id="2EU-aa-Gkf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bJO-Dg-EDr"/>
+                        <viewControllerLayoutGuide type="bottom" id="HvU-Zh-yyL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mmz-SK-97s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cz1-6i-gYw">
+                                <rect key="frame" x="78.5" y="60" width="218" height="239"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a smiling icon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVV-bo-lgb">
+                                <rect key="frame" x="108" y="319" width="158" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cz1-6i-gYw" firstAttribute="top" secondItem="bJO-Dg-EDr" secondAttribute="bottom" constant="40" id="7uk-OM-SAj"/>
+                            <constraint firstItem="HVV-bo-lgb" firstAttribute="top" secondItem="Cz1-6i-gYw" secondAttribute="bottom" constant="20" id="G0e-ft-8oa"/>
+                            <constraint firstItem="HVV-bo-lgb" firstAttribute="centerX" secondItem="mmz-SK-97s" secondAttribute="centerX" id="P9Z-d2-q8b"/>
+                            <constraint firstItem="Cz1-6i-gYw" firstAttribute="centerX" secondItem="mmz-SK-97s" secondAttribute="centerX" id="gC6-7O-f2U"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W2X-tG-8E9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="38"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="P6b-AS-CL7">
+            <objects>
+                <viewController id="dzK-wr-6bN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zN6-tU-HTU"/>
+                        <viewControllerLayoutGuide type="bottom" id="bJN-22-Fjd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9lc-Zy-Tii">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eeb-V7-ORT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
 </document>
