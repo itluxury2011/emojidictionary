@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4243297A1E1683BA00D8A678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424329791E1683BA00D8A678 /* AppDelegate.swift */; };
+		4209D50B1E1B600200F27A8F /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4209D50A1E1B600200F27A8F /* Emoji.swift */; };
+		4209D50C1E1B714800F27A8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424329791E1683BA00D8A678 /* AppDelegate.swift */; };
 		4243297C1E1683BA00D8A678 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4243297B1E1683BA00D8A678 /* ViewController.swift */; };
 		4243297F1E1683BA00D8A678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4243297D1E1683BA00D8A678 /* Main.storyboard */; };
 		424329811E1683BA00D8A678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 424329801E1683BA00D8A678 /* Assets.xcassets */; };
 		424329841E1683BA00D8A678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 424329821E1683BA00D8A678 /* LaunchScreen.storyboard */; };
+		4243298C1E18D9B400D8A678 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4243298B1E18D9B400D8A678 /* DefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4209D50A1E1B600200F27A8F /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		424329761E1683BA00D8A678 /* Emoji Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Dictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		424329791E1683BA00D8A678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4243297B1E1683BA00D8A678 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		424329801E1683BA00D8A678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		424329831E1683BA00D8A678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		424329851E1683BA00D8A678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4243298B1E18D9B400D8A678 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				424329791E1683BA00D8A678 /* AppDelegate.swift */,
+				4243298B1E18D9B400D8A678 /* DefinitionViewController.swift */,
+				4209D50A1E1B600200F27A8F /* Emoji.swift */,
 				4243297B1E1683BA00D8A678 /* ViewController.swift */,
 				4243297D1E1683BA00D8A678 /* Main.storyboard */,
 				424329801E1683BA00D8A678 /* Assets.xcassets */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4209D50C1E1B714800F27A8F /* AppDelegate.swift in Sources */,
 				4243297C1E1683BA00D8A678 /* ViewController.swift in Sources */,
-				4243297A1E1683BA00D8A678 /* AppDelegate.swift in Sources */,
+				4243298C1E18D9B400D8A678 /* DefinitionViewController.swift in Sources */,
+				4209D50B1E1B600200F27A8F /* Emoji.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +307,7 @@
 				4243298A1E1683BA00D8A678 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

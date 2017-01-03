@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="toH-f2-vT5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,30 +21,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BOW-o1-8My">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ziy-Yw-Csh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="BOW-o1-8My" secondAttribute="trailing" id="1Cw-JI-qa5"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BOW-o1-8My" secondAttribute="bottom" id="2HV-am-CsU"/>
-                            <constraint firstItem="BOW-o1-8My" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MDe-k3-wmd"/>
-                            <constraint firstItem="BOW-o1-8My" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YVd-he-c7a"/>
+                            <constraint firstItem="ziy-Yw-Csh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4Ao-QH-BWT"/>
+                            <constraint firstItem="ziy-Yw-Csh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VXG-gG-KaI"/>
+                            <constraint firstAttribute="trailing" secondItem="ziy-Yw-Csh" secondAttribute="trailing" id="VrE-FQ-vgc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ziy-Yw-Csh" secondAttribute="bottom" id="bnd-NI-MuG"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="HLj-DL-MDy"/>
                     <connections>
-                        <outlet property="theCoolTableView" destination="BOW-o1-8My" id="Ehn-ot-Tsr"/>
+                        <outlet property="theCoolTableView" destination="ziy-Yw-Csh" id="AGJ-h3-F3N"/>
+                        <segue destination="2EU-aa-Gkf" kind="show" identifier="moveSegue" id="QUc-HB-STa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="975.20000000000005" y="38.23088455772114"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="Gak-R5-9Oe">
             <objects>
-                <viewController id="2EU-aa-Gkf" sceneMemberID="viewController">
+                <viewController id="2EU-aa-Gkf" customClass="DefinitionViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bJO-Dg-EDr"/>
                         <viewControllerLayoutGuide type="bottom" id="HvU-Zh-yyL"/>
@@ -54,13 +57,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cz1-6i-gYw">
-                                <rect key="frame" x="78.5" y="60" width="218" height="239"/>
+                                <rect key="frame" x="78.5" y="104" width="218" height="239"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a smiling icon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVV-bo-lgb">
-                                <rect key="frame" x="108" y="319" width="158" height="21"/>
+                                <rect key="frame" x="108" y="363" width="158" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3d-Yo-2so">
+                                <rect key="frame" x="123" y="392" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year: 2001" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4At-OG-Cbk">
+                                <rect key="frame" x="126" y="421" width="122" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -69,15 +84,25 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Cz1-6i-gYw" firstAttribute="top" secondItem="bJO-Dg-EDr" secondAttribute="bottom" constant="40" id="7uk-OM-SAj"/>
+                            <constraint firstItem="B3d-Yo-2so" firstAttribute="centerX" secondItem="mmz-SK-97s" secondAttribute="centerX" id="8iw-8f-NeF"/>
                             <constraint firstItem="HVV-bo-lgb" firstAttribute="top" secondItem="Cz1-6i-gYw" secondAttribute="bottom" constant="20" id="G0e-ft-8oa"/>
+                            <constraint firstItem="4At-OG-Cbk" firstAttribute="top" secondItem="B3d-Yo-2so" secondAttribute="bottom" constant="8" id="MSG-Pg-Ulk"/>
                             <constraint firstItem="HVV-bo-lgb" firstAttribute="centerX" secondItem="mmz-SK-97s" secondAttribute="centerX" id="P9Z-d2-q8b"/>
                             <constraint firstItem="Cz1-6i-gYw" firstAttribute="centerX" secondItem="mmz-SK-97s" secondAttribute="centerX" id="gC6-7O-f2U"/>
+                            <constraint firstItem="4At-OG-Cbk" firstAttribute="centerX" secondItem="mmz-SK-97s" secondAttribute="centerX" id="iiG-MB-jFU"/>
+                            <constraint firstItem="B3d-Yo-2so" firstAttribute="top" secondItem="HVV-bo-lgb" secondAttribute="bottom" constant="8" id="kQH-eP-MNH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="birthYearLabel" destination="4At-OG-Cbk" id="HbT-Kl-uxu"/>
+                        <outlet property="categoryLabel" destination="B3d-Yo-2so" id="pit-Zx-n8N"/>
+                        <outlet property="definitionLabel" destination="HVV-bo-lgb" id="KcF-wR-KaA"/>
+                        <outlet property="emojiLabel" destination="Cz1-6i-gYw" id="Ady-rs-6i2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W2X-tG-8E9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="831" y="38"/>
+            <point key="canvasLocation" x="1768.8" y="37.331334332833585"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="P6b-AS-CL7">
@@ -95,6 +120,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eeb-V7-ORT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="152" y="790"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l4n-a9-Ju8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="toH-f2-vT5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hS5-aQ-IIt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RD9-Et-rnL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PSu-oT-fas" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258" y="37"/>
         </scene>
     </scenes>
 </document>
